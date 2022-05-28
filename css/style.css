@@ -1,11 +1,44 @@
-body{
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0.596);
+/*---- Todo conteudo ----*/
+*{
+    margin: o;
+    padding: o;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1{
-    color: azure;
+
+/*----- Menu -----*/
+a{
+    text-decoration: none;
 }
-p{
-    color: azure;
-    font-family: Verdana;
+header .menu{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .menu .introducao li{
+    display: inline-block;
+}
+header .menu .introducao a{
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 150ms;
+}
+header .menu .introducao a:hover{
+    color: white;
+    background-color: #555;
+}
+header .menu .logins li{
+    display: inline-block;
+}
+header .menu .logins a{
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 200ms;
+}
+header .menu .logins a:hover{
+    color: white;
+    background-color: darkslateblue;
 }
