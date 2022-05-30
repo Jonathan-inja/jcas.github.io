@@ -1,14 +1,18 @@
 /*---- Todo conteudo ----*/
 *{
-    margin: o;
-    padding: o;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    display: block;
 }
 
 /*----- Menu -----*/
 a{
     text-decoration: none;
+}
+header .menu .introducao li{
+    display: inline-block;
 }
 header .menu{
     position: fixed;
@@ -16,29 +20,48 @@ header .menu{
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-header .menu .introducao li{
-    display: inline-block;
+    justify-content: space-between; 
 }
 header .menu .introducao a{
-    padding: 8px 12px;
-    border-radius: 3px;
-    transition: 150ms;
+    color: black;
+    padding: 0px 20px 10px;
+    position: relative;
 }
-header .menu .introducao a:hover{
-    color: white;
-    background-color: #555;
+header .menu .introducao a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
 }
+header .menu .introducao a:hover::after{
+    width: 100%;
+}
+
 header .menu .logins li{
     display: inline-block;
 }
-header .menu .logins a{
-    padding: 8px 12px;
-    border-radius: 3px;
-    transition: 200ms;
+header .menu .entrar a{
+    color: black;
+    padding: 0px 20px 10px;
+    position: relative;
 }
-header .menu .logins a:hover{
-    color: white;
+header .menu .entrar a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
     background-color: darkslateblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
 }
+header .menu .entrar a:hover::after{
+    width: 100%;
+}
+
+/*----- Conteudo -----*/
+
