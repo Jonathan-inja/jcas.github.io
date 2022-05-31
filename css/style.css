@@ -1,4 +1,4 @@
-/*---- Todo conteudo ----*/
+/*-------**** Todo conteudo da Pagina index.html ****-------*/
 *{
     margin: 0;
     padding: 0;
@@ -14,18 +14,17 @@ html, body{
 body{
     width: 100%;
     height: 100vh;
-    background-image:  url(https://img.freepik.com/fotos-gratis/fundo-de-ficcao-cientifica-futurista-moderno_35913-2152.jpg?t=st=1653931618~exp=1653932218~hmac=23b9f09ece9eb616f2689a34e45f46fdc5a4f561a0350b71fa0c11bae1421154&w=740);
+    background-image:  url(https://img.freepik.com/fotos-gratis/fundo-de-ficcao-cientifica-futurista-moderno_35913-2152.jpg?t=st=1653931618~exp=1653932218~hmac=23b9f09ece9eb616f2689a34e45f46fdc5a4f561a0350b71fa0c11bae1421154&w=740); 
     background-position: center;
     background-size: cover;
 }
-/*----- Menu -----*/
+/*--------**** MENU ****--------*/
+
+/*---** Menu geral **---*/
 a{
     text-decoration: none;
 }    
-header .menu .introducao li{
-    display: inline-block;
-}
-header .menu{
+.menu{
     position: fixed;
     width: 100%;
     margin: -05px;
@@ -33,15 +32,19 @@ header .menu{
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    
+    background-color: rgba(15, 15, 61, 0.747);    
 }
-header .menu .introducao a{
+/*---** Menu de Informações **---*/
+.menu .introducao li{
+    display: inline-block;
+}
+.menu .introducao a{
     color: white;
     font: bolder;
     padding: 0px 10px 10px;
     position: relative;
 }
-header .menu .introducao a::after{
+.menu .introducao a::after{
     content: " ";
     width: 0%;
     height: 3px;
@@ -51,20 +54,20 @@ header .menu .introducao a::after{
     left: 0;
     transition: 0.5s ease-in-out;
 }
-header .menu .introducao a:hover::after{
+.menu .introducao a:hover::after{
     width: 100%;
 }
-
-header .menu .logins li{
+/*---** Menu com login e cadastro **---*/
+.menu .logins li{
     display: inline-block;
 }
-header .menu .entrar a{
+.menu .entrar a{
     color: white;
     padding: 0px 20px 10px;
     position: relative;
     border-radius: 20px;
 }
-header .menu .entrar a::after{
+.menu .entrar a::after{
     content: " ";
     width: 20%;
     height: 3px;
@@ -74,13 +77,23 @@ header .menu .entrar a::after{
     left: 0;
     transition: 0.5s ease-in-out;
 }
-header .menu .entrar a:hover::after{
+.menu .entrar a:hover::after{
     width: 100%;
 }
 
-/*----- Conteudo -----*/
 
-section .principal{
+
+/*--------**** CONTEUDO ****-------*/
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    /* background-color: aquamarine; */
+}
+
+
+/* section .principal{
     position: absolute;
     top: 80px;
     width: 40%;
@@ -89,7 +102,6 @@ section .principal{
     background-color: rgba(240, 255, 255, 0.801);
     border-radius: 05%;
     border: 2px solid rgb(255, 255, 255);
-
 }
 section .principal .info-home{
     position: absolute;
@@ -101,6 +113,5 @@ section .principal .info-home p{
     text-indent: 05%;
 }
 section .principal .info-home h2{
-    text-align: center;
-    
-}
+    text-align: center;    
+} */
